@@ -10,25 +10,97 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    :root{
+      --background-color: hsl(47, 88%, 63%);
+      --text-color-grey: hsl(0, 0%, 50%);
+      --text-color-black: hsl(0, 0%, 7%);
+      --card-background-color: hsl(0, 0%, 100%);
+    }
+    body{
+      display: grid;
+      grid-template-columns: 30% auto 30%;
+      grid-template-rows: 10% auto 10%;
+      min-height: 100vh;
+    }
+    .container{
+      display: grid;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      grid-template-rows: auto auto auto auto auto;
+      width: 369px;
+      padding: 15px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      row-gap: 0;
+      column-gap: 0;
+    }
+    .attribution {
+      font-size: 11px; 
+      text-align: center; 
+      grid-row: 6/7;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .card-img{
+      grid-row: 1/2;
+      height: fit-content;
+    }
+    .card-img img{
+      border-radius: 10px;
+    }
+    .hero{
+      grid-row: 2/3;
+    }
+    .hero:nth-child(1){
+      
+    }
+    .main{
+      grid-row: 3/4;
+    }
+    .content{
+      grid-row: 4/5;
+    }
+    .author{
+      grid-row: 5/6;
+    }
   </style>
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="card-img">
+      <img src="assets/images/illustration-article.svg" alt="Image">
+    </div>
+    <div class="hero">
+      <p>Learning</p>
+      <p>Published 21 Dec 2023</p>
+    </div>
+    <div class="main">
+      HTML & CSS foundations
+    </div>
+    <div class="content">
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </div>
+    <div class="author">
+      <img src="assets/images/image-avatar.webp" alt="profile">
+      Greg Hooper
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Tenzin Choda.</a>.
+    </div>
   </div>
 </body>
 </html>
+
+
+
+
+
+  
