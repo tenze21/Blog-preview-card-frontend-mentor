@@ -15,60 +15,86 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: var(--text-font);
     }
     :root{
       --background-color: hsl(47, 88%, 63%);
       --text-color-grey: hsl(0, 0%, 50%);
       --text-color-black: hsl(0, 0%, 7%);
       --card-background-color: hsl(0, 0%, 100%);
+      --text-font: 'Figtree', sans-serif;
     }
     body{
       display: grid;
       grid-template-columns: 30% auto 30%;
       grid-template-rows: 10% auto 10%;
       min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background-color);
     }
     .container{
-      display: grid;
-      grid-column: 2/3;
       grid-row: 2/3;
-      grid-template-rows: auto auto auto auto auto;
+      grid-column: 2/3;
       width: 369px;
-      padding: 15px;
+      padding: 12px;
       border: 2px solid #000;
       border-radius: 10px;
-      row-gap: 0;
-      column-gap: 0;
+      width: 325px;
+      height: 62vh;
+      background-color: var(--card-background-color);
+      box-shadow: 10px 10px #000;
+      position: relative;
     }
     .attribution {
+      grid-row: 3/4;
+      grid-column: 2/3;
       font-size: 11px; 
-      text-align: center; 
-      grid-row: 6/7;
+      text-align: center;
+      position: absolute; 
+      bottom: -25px;
     }
     .attribution a { 
       color: hsl(228, 45%, 44%); 
     }
-    .card-img{
-      grid-row: 1/2;
-      height: fit-content;
-    }
     .card-img img{
       border-radius: 10px;
+      width: 100%;
+    }
+    .hero p:first-child{
+      background-color: var(--background-color);
+      width: fit-content;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-weight: 800;
     }
     .hero{
-      grid-row: 2/3;
-    }
-    .hero:nth-child(1){
-      
+      margin: 10px 0;
+      color: var(--text-color-black);
     }
     .main{
-      grid-row: 3/4;
+      margin: 10px 0;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--text-color-black);
     }
     .content{
-      grid-row: 4/5;
+      margin: 10px 0;
+      font-size: 0.875rem;
+      line-height: 1.225rem;
+      color: var(--text-color-grey);
     }
     .author{
-      grid-row: 5/6;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-color-black);
+      font-weight: 800;
+    }
+    .author img{
+      width: 30px;
     }
   </style>
 </head>
