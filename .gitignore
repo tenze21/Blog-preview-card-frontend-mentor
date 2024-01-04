@@ -17,3 +17,6 @@
 
 #avoid text files
 *.txt
+
+# ignore the style guide file provided by frontend mentor
+style-guide.md
