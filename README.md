@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: checkout my solution on frontend mentor [here]()
+- Solution URL: checkout my solution on frontend mentor [here](https://www.frontendmentor.io/solutions/blog-preview-card-with-css-grid-mJDow-RtNQ)
 - Live Site URL: checkout the livesite [here](https://tenze21.github.io/Blog-preview-card-frontend-mentor/)
 
 ## My process
