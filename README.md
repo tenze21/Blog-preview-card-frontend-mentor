@@ -24,12 +24,12 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-##You can checkout my work below 😊.
--The desktop design.
+## You can checkout my work below 😊.
+- The desktop design.
 ![](assets/images/desktop.png.png)
--The mobile design.
+- The mobile design.
 ![](assets/images/mobile.png.jpg)
--The hover effect.
+- The hover effect.
 ![](assets/images/hover.png.png)
 
 ### Links
